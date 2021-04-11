@@ -24,7 +24,8 @@ app.use((req, res, next) => {
     next();
 })
 
-app.use('/', userRoute);
+
+app.use('/user', userRoute);
 
 
 const PORT = process.env.PORT || 3001;
